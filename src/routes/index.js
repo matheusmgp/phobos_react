@@ -6,7 +6,7 @@ import {
 import ListChamadosPage from "../pages/ListChamados";
 import ListTemplatesPage from "../pages/ListTamplates";
 import HomePage from "../pages/Home";
-import Header from "../components/Header";
+import { Header } from "../components/Header";
 import ListAssociacoesPage from "../pages/ListAssociacoes";
 import GerenciamentoWipPage from "../pages/ListGerenciarWips";
 import KanbanPage from "../pages/Kanban";
@@ -22,6 +22,7 @@ export const Routes = () => {
         <Route path="/gerenciamento-wip" element={<GerenciamentoWipPage />} />
         <Route path="/templates-resposta" element={<ListTemplatesPage />} />
         <Route path="/kanban" element={<KanbanPage />} />
+        <Route path="*" element={<HomePage />} />
       </Switch>
     </Router>
   );

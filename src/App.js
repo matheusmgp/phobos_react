@@ -1,5 +1,5 @@
 import { Routes } from "./routes/index";
 
-export default function App() {
+export const App = () => {
   return <Routes />;
-}
+};
